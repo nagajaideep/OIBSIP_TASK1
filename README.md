@@ -12,5 +12,5 @@ a number is chosen by the system (between 1 and 100) and total guesses are 5. Go
 4.Continue guessing until you either guess the number correctly or have used up all 5 trials
 5.If you guess the number correct, the program will print THE BELOW MESSAGE 
 Congratulations! You have guessed the correct number.
-6.If you are unable to guess the number, the program will reveal the number.
+6.If you are unable to guess the number, the program will reveal the number
 
