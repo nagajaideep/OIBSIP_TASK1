@@ -1,13 +1,16 @@
+//THE INTITAL BALANCE ,PIN OF THE USER ARE PREDEFINED AND GIVEN FROM OWNER OF THE PROGRAMAND CANNOT BE CHANGED ONCE PROGRAM IS DONE 
+//                                       ATM INTERFACE 
 
 import java.util.Scanner;
 
 public class task2 {
     private static Scanner scanner = new Scanner(System.in);
-    private static int balance = 100000; // Initial balance
+    private static int balance = 100000;
     private static StringBuilder transactionHistory = new StringBuilder();
 
     public static void main(String[] args) {
         int pin = 12345;
+        System.out.println("WELCOME TO ATM INTERFACE");
         System.out.println("enter your pin to proceed");
         int checkpin = scanner.nextInt();
         if (checkpin == pin) {
@@ -39,7 +42,7 @@ public class task2 {
                         transfer();
                         break;
                     case 6:
-                        System.out.println("Exiting...");
+                        System.out.println("Exiting...and thank you using ATM");
                         System.exit(0);
                     default:
                         System.out.println("Invalid choice. Please try again.");
@@ -91,9 +94,5 @@ public class task2 {
         balance -= transferAmount;
         transactionHistory.append("Transfer: -").append(transferAmount).append("\n");
         System.out.println("Transfer successful to account: " + recipientAccount);
-    }
-
-    {
-        System.out.println("the pin entrered is incorrect");
     }
 }
